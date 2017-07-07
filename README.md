@@ -11,8 +11,10 @@ More details on [W3C](http://www.w3.org/TR/eventsource/) and [Wikipedia](https:/
 
 Clojars coordinates `[ring-sse-middleware "0.1.0-SNAPSHOT"]` (not on Clojars yet)
 
+**This project does not pull in any web server dependency. You must include a compatible web server in your project.**
 
-### Tested servers
+
+### Tested web servers
 
 This middleware is tested with the following web servers:
 
@@ -22,8 +24,6 @@ This middleware is tested with the following web servers:
 | [HTTP Kit](http://www.http-kit.org/)                                                   | 2.1.x to 2.2.0              |
 | [Immutant](http://immutant.org/)                                                       | 2.1.9                       |
 | [Jetty](http://www.eclipse.org/jetty/) [adapter](https://github.com/ring-clojure/ring) | 9.2.x (Ring 1.4.0 to 1.6.1) |
-
-_This project does not pull in any web server dependency. You must include a compatible web server in your project._
 
 
 ### Namespaces
