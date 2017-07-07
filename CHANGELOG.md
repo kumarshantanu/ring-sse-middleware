@@ -1,9 +1,5 @@
 # ring-sse-middleware Change Log
 
-## Todo
-- [Todo] Use custom thread-pool (or Clojure's pooled-executor) instead of Clojure's solo-executor in adapters
-
-
 ## 0.1.0 / 2017-July-07
 
 - Configurable API support
