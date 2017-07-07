@@ -11,7 +11,7 @@ More details on [W3C](http://www.w3.org/TR/eventsource/) and [Wikipedia](https:/
 
 Clojars coordinates `[ring-sse-middleware "0.1.0-SNAPSHOT"]` (not on Clojars yet)
 
-**This project does not pull in any web server dependency. You must include a compatible web server in your project.**
+_**No web server dependency is included. You must add a compatible web server to your project.**_
 
 
 ### Tested web servers
