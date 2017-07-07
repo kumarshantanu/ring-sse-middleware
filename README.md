@@ -18,7 +18,7 @@ _**No web server dependency is included. You must add a compatible web server to
 
 This middleware is tested with the following web servers:
 
-| Project                                                                                | Version                     |
+| Web server                                                                             | Version                     |
 |----------------------------------------------------------------------------------------|-----------------------------|
 | [Aleph/Manifold](http://aleph.io/)                                                     | 0.4.0 to 0.4.3              |
 | [HTTP Kit](http://www.http-kit.org/)                                                   | 2.1.x to 2.2.0              |
@@ -39,7 +39,7 @@ Remainder of this document uses the following namespace aliases:
 (require '[ring-sse-middleware.adapter.manifold :as m])  ; for Manifold (Aleph server) only
 ```
 
-### Quickstart with defined route and http-kit server
+### Quickstart with defined route and HTTP Kit server
 
 Let us assume you have
 - a Ring handler defined as `handler`
@@ -58,7 +58,7 @@ Once you start HTTP Kit, you can fetch the stream from the URI `/app/metrics?str
 default configuration is triggered with query parameter `stream=true` for HTTP GET requests, and has 1 second interval.
 
 
-### Quickstart with custom function and Jetty server
+### Quickstart with custom options and Jetty server
 
 Let us assume you have
 - a Ring handler defined as `handler`
