@@ -31,8 +31,8 @@ This middleware is tested with the following web servers:
 Remainder of this document uses the following namespace aliases:
 
 ```clojure
-(require '[ring-sse-middleware.core     :as r])
-(require '[ring-sse-middleware.wrapper  :as w])
+(require '[ring-sse-middleware.core    :as r])
+(require '[ring-sse-middleware.wrapper :as w])
 (require '[ring-sse-middleware.adapter.generic  :as g])  ; for any server with no response buffering
 (require '[ring-sse-middleware.adapter.http-kit :as h])  ; for HTTP-Kit server only
 (require '[ring-sse-middleware.adapter.immutant :as i])  ; for Immutant server only
@@ -44,7 +44,7 @@ Remainder of this document uses the following namespace aliases:
 Let us assume you have
 - a Ring handler defined as `handler`
 - a URI endpoint `/app/metrics` that returns a JSON string of metrics data
-- web server http-kit
+- web server [HTTP Kit](http://www.http-kit.org/)
 
 You want to periodically (at 1 second interval) query this data and stream it to a browser client for visualization.
 Use ring-sse-middleware to set up streaming.
@@ -63,7 +63,7 @@ default configuration is triggered with query parameter `stream=true` for HTTP G
 Let us assume you have
 - a Ring handler defined as `handler`
 - a no-argument function `emit-score` that returns a comma-separated string of a cricket match score
-- web server Jetty
+- web server [Jetty](http://www.eclipse.org/jetty/) using the [Ring Jetty adapter](https://github.com/ring-clojure/ring)
 
 You want to periodically (at 3 seconds interval) query this data at URI `/score` and stream it to a remote client.
 Use the ring-sse middleware to set up streaming for at most 100 clients.
@@ -86,7 +86,7 @@ proper Server-sent Events support consider one of the non-generic web servers.
 
 ### Development
 
-Run the server (either of the following commands, press Ctrl+C to stop) in one terminal:
+Run the server (any of the following commands, press Ctrl+C to stop) in one terminal:
 
 ```shell
 lein do clean, aleph run
