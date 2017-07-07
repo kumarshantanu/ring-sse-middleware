@@ -66,7 +66,7 @@ Let us assume you have
 - web server [Jetty](http://www.eclipse.org/jetty/) using the [Ring Jetty adapter](https://github.com/ring-clojure/ring)
 
 You want to periodically (at 3 seconds interval) query this data at URI `/score` and stream it to a remote client.
-Use the ring-sse middleware to set up streaming for at most 100 clients.
+Use the ring-sse-middleware to set up streaming for at most 100 clients.
 
 ```clojure
 (def wrapped-handler (-> handler
