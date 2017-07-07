@@ -51,10 +51,10 @@ Use ring-sse-middleware to set up streaming.
 
 ```clojure
 (def wrapped-handler (-> handler
-                       (r/streaming-middleware h/generate-stream))) ; for Aleph it would be a/generate-stream
+                       (r/streaming-middleware h/generate-stream))) ; for Aleph it would be m/generate-stream
 ```
 
-Once you start http-kit, you can fetch the stream from the URI `/app/metrics?stream=true` on the same server. The
+Once you start HTTP Kit, you can fetch the stream from the URI `/app/metrics?stream=true` on the same server. The
 default configuration is triggered with query parameter `stream=true` for HTTP GET requests, and has 1 second interval.
 
 
