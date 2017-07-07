@@ -9,7 +9,7 @@ More details on [W3C](http://www.w3.org/TR/eventsource/) and [Wikipedia](https:/
 
 ## Usage
 
-Clojars coordinates `[ring-sse-middleware "0.1.0-SNAPSHOT"]` (not on Clojars yet)
+Clojars coordinates `[ring-sse-middleware "0.1.0"]`
 
 _**No web server dependency is included. You must add a compatible web server to your project.**_
 

@@ -4,7 +4,7 @@
 - [Todo] Use custom thread-pool (or Clojure's pooled-executor) instead of Clojure's solo-executor in adapters
 
 
-## [WIP] 0.1.0 / 2017-July-??
+## 0.1.0 / 2017-July-07
 
 - Configurable API support
   - URI based trigger
