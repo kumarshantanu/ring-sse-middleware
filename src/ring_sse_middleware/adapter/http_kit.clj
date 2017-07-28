@@ -36,6 +36,5 @@
                          (hks/send! channel (format "Error - (%s) %s"
                                               (str (class e)) (.getMessage ^Throwable e)) false)
                          (hks/close channel)
-                         (.printStackTrace e)
                          (throw e)))]
             (hks/send! channel body false)))))))

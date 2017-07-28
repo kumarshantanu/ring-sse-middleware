@@ -34,7 +34,6 @@
                                         (async/send! ch (format "error - (%s) %s"
                                                           (str (class e)) (.getMessage ^Throwable e)))
                                         (async/close ch)
-                                        (.printStackTrace e)
                                         (throw e)))]
                            (async/send! ch body)))))
          :on-close (fn [ch {:keys [_code _reason]}]  ; both _code and _reason would be nil because this is not WebSocket

@@ -35,7 +35,6 @@
                        (s/put! stream (format "Error - (%s) %s"
                                         (str (class e)) (.getMessage ^Throwable e)))
                        (s/close! stream)
-                       (.printStackTrace e)
                        (throw e)))]
           (s/put! stream body))))
     (assoc headers :body stream)))

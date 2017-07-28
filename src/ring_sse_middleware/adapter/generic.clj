@@ -37,10 +37,6 @@
                       (.flush))))
                 (catch IOException e
                   (when-not (= "Pipe closed" (.getMessage e))
-                    (.printStackTrace e))
-                  (throw e))
-                (catch Throwable e
-                  (.printStackTrace e)
-                  (throw e))
+                    (throw e)))
                 (finally
                   (cleanup)))))))
