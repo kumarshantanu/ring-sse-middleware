@@ -27,5 +27,15 @@
                           (reset! running? false)
                           (cleanup)))
     (future
-      (while @running? (s/put! stream (body-generator))))
+      (while @running?
+        (let [body (try
+                     (body-generator)
+                     (catch Throwable e
+                       (reset! running? false)
+                       (s/put! stream (format "Error - (%s) %s"
+                                        (str (class e)) (.getMessage ^Throwable e)))
+                       (s/close! stream)
+                       (.printStackTrace e)
+                       (throw e)))]
+          (s/put! stream body))))
     (assoc headers :body stream)))

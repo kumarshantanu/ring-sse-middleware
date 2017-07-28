@@ -28,4 +28,14 @@
                               (cleanup)))
       (hks/send! channel headers false)
       (future
-        (while @running? (hks/send! channel (body-generator) false))))))
+        (while @running?
+          (let [body (try
+                       (body-generator)
+                       (catch Throwable e
+                         (reset! running? false)
+                         (hks/send! channel (format "Error - (%s) %s"
+                                              (str (class e)) (.getMessage ^Throwable e)) false)
+                         (hks/close channel)
+                         (.printStackTrace e)
+                         (throw e)))]
+            (hks/send! channel body false)))))))

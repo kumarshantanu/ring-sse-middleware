@@ -26,7 +26,17 @@
       (async/as-channel request
         {:on-open  (fn [ch]
                      (future
-                       (while @running? (async/send! ch (body-generator)))))
+                       (while @running?
+                         (let [body (try
+                                      (body-generator)
+                                      (catch Throwable e
+                                        (reset! running? false)
+                                        (async/send! ch (format "error - (%s) %s"
+                                                          (str (class e)) (.getMessage ^Throwable e)))
+                                        (async/close ch)
+                                        (.printStackTrace e)
+                                        (throw e)))]
+                           (async/send! ch body)))))
          :on-close (fn [ch {:keys [_code _reason]}]  ; both _code and _reason would be nil because this is not WebSocket
                      (reset! running? false)
                      (cleanup))
