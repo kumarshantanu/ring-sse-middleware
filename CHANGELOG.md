@@ -1,5 +1,14 @@
 # ring-sse-middleware Change Log
 
+## [WIP] 0.1.1 / 2017-July-??
+
+- [TODO] Stop streaming with error message on exception
+  - HTTP Kit
+  - Manifold
+  - Immutant
+  - Generic
+
+
 ## 0.1.0 / 2017-July-07
 
 - Configurable API support
