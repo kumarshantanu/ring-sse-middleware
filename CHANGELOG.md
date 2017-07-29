@@ -1,11 +1,12 @@
 # ring-sse-middleware Change Log
 
-## [WIP] 0.1.1 / 2017-July-??
+## 0.1.1 / 2017-July-29
 
 - Stop streaming with error message on exception
   - HTTP Kit
   - Manifold
   - Immutant
+- Avoid printing stack trace in the generic adapter
 
 
 ## 0.1.0 / 2017-July-07

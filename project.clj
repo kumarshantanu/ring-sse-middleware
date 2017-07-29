@@ -1,4 +1,4 @@
-(defproject ring-sse-middleware "0.1.1-SNAPSHOT"
+(defproject ring-sse-middleware "0.1.1"
   :description "Ring middleware to emit Server-sent Events"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
