@@ -101,7 +101,10 @@ No available streaming connection. Maximum connection limit is: " max-connection
           (if (if semaphore (.tryAcquire semaphore) true)
             (stream-generator matching-request
               (fn fetch-formatted-chunk []
-                (chunk-generator matching-request))
+                (let [^String chunk (chunk-generator matching-request)
+                      ^StringBuilder sb (StringBuilder. chunk)]
+                  (.append sb \newline)
+                  (.toString sb)))
               {:cleanup #(when semaphore (.release semaphore))
                :headers empty-response})
             response-503)
