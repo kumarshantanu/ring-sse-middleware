@@ -1,4 +1,4 @@
-(defproject ring-sse-middleware "0.1.1"
+(defproject ring-sse-middleware "0.1.2-SNAPSHOT"
   :description "Ring middleware to emit Server-sent Events"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -13,7 +13,7 @@
                    :global-vars  {*unchecked-math* :warn-on-boxed}}
              :c18 {:dependencies [[org.clojure/clojure "1.8.0"]]
                    :global-vars  {*unchecked-math* :warn-on-boxed}}
-             :c19 {:dependencies [[org.clojure/clojure "1.9.0-alpha17"]]
+             :c19 {:dependencies [[org.clojure/clojure "1.9.0-beta3"]]
                    :global-vars  {*unchecked-math* :warn-on-boxed}}
              ;; test profiles
              :aleph    {:dependencies [[aleph "0.4.3"]]

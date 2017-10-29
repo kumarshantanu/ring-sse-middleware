@@ -1,5 +1,10 @@
 # ring-sse-middleware Change Log
 
+## 0.1.2 / 2017-October-??
+
+- [TODO] Insert a newline between data chunks
+
+
 ## 0.1.1 / 2017-July-29
 
 - Stop streaming with error message on exception
