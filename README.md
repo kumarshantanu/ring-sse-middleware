@@ -9,7 +9,7 @@ More details on [W3C](http://www.w3.org/TR/eventsource/) and [Wikipedia](https:/
 
 ## Usage
 
-Clojars coordinates `[ring-sse-middleware "0.1.1"]`
+Clojars coordinates `[ring-sse-middleware "0.1.2"]`
 
 _**No web server dependency is included. You must add a compatible web server to your project.**_
 
@@ -23,7 +23,7 @@ This middleware is tested with the following web servers:
 | [Aleph/Manifold](http://aleph.io/)                                                     | 0.4.0 to 0.4.3              |
 | [HTTP Kit](http://www.http-kit.org/)                                                   | 2.1.x to 2.2.0              |
 | [Immutant](http://immutant.org/)                                                       | 2.1.9                       |
-| [Jetty](http://www.eclipse.org/jetty/) [adapter](https://github.com/ring-clojure/ring) | 9.2.x (Ring 1.4.0 to 1.6.1) |
+| [Jetty](http://www.eclipse.org/jetty/) [adapter](https://github.com/ring-clojure/ring) | 9.2.x (Ring 1.4.0 to 1.6.2) |
 
 
 ### Namespaces

@@ -1,4 +1,4 @@
-(defproject ring-sse-middleware "0.1.2-SNAPSHOT"
+(defproject ring-sse-middleware "0.1.2"
   :description "Ring middleware to emit Server-sent Events"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -7,7 +7,7 @@
   :global-vars {*assert* true
                 *warn-on-reflection* true}
   :profiles {:dev {:dependencies [[org.clojure/tools.nrepl "0.2.12"]
-                                  [cheshire "5.7.1"]]}
+                                  [cheshire "5.8.0"]]}
              :c16 {:dependencies [[org.clojure/clojure "1.6.0"]]}
              :c17 {:dependencies [[org.clojure/clojure "1.7.0"]]
                    :global-vars  {*unchecked-math* :warn-on-boxed}}
