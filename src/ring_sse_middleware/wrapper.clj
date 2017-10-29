@@ -86,7 +86,7 @@
 (defn wrap-sse-event
   "Given function f that returns a string, wrap it such that it always returns a valid Server-sent Event string."
   [f]
-  (fn ^String sse-wrapper [& args]
+  (fn sse-wrapper ^String [& args]
     (as-sse-event (apply f args))))
 
 
