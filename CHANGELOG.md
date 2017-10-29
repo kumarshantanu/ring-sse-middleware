@@ -2,6 +2,7 @@
 
 ## 0.1.2 / 2017-October-??
 
+- Suffix `data:` token with a space character
 - [TODO] Insert a newline between data chunks
 
 

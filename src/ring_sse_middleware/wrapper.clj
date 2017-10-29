@@ -59,10 +59,10 @@
     ;; looks like already in SSE format, so return as it is
     x
     (let [n (.length x)
-          ^StringBuilder sb (StringBuilder.)]
-      ;; the `data:` prefix
-      (.append sb "data:")
-      ;; detect CR/LF and insert `data:` prefix for next line
+          ^StringBuilder sb (StringBuilder. n)]
+      ;; the `data: ` prefix
+      (.append sb "data: ")
+      ;; detect CR/LF and insert `data: ` prefix for next line
       (loop [index 0
              break? false]
         (when (< index n)
@@ -71,7 +71,7 @@
                          (= ch \newline))
                      true
                      (do (when break?
-                           (.append sb "data:"))
+                           (.append sb "data: "))
                        false))]
             (.append sb ch)
             (recur (unchecked-inc index) b?))))
