@@ -53,8 +53,11 @@
   See: http://www.w3.org/TR/eventsource/"
   ^String [^String x]
   ;; check whether already in SSE format
-  (if (or (.startsWith x "data:")
-        (.startsWith x "event:"))
+  (if (or (.startsWith x ":")
+        (.startsWith x "data:")
+        (.startsWith x "event:")
+        (.startsWith x "id:")
+        (.startsWith x "retry:"))
     ;; looks like already in SSE format, so return as it is
     (if (or (.endsWith x \return)
           (.endsWith x \newline))

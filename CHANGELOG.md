@@ -4,7 +4,7 @@
 
 - Fixes to `ring-sse-middleware.wrapper/as-sse-event`
   - Suffix emitted `data:` token with a space character
-  - Forward payload starting with `event:` token as SSE
+  - Forward payload starting with `:`/`event:`/`id:`/`retry:` token as SSE
 - Insert a newline between data chunks
 
 
