@@ -2,7 +2,9 @@
 
 ## 0.1.2 / 2017-October-??
 
-- Suffix `data:` token with a space character
+- Fixes to `ring-sse-middleware.wrapper/as-sse-event`
+  - Suffix emitted `data:` token with a space character
+  - Forward payload starting with `event:` token as SSE
 - [TODO] Insert a newline between data chunks
 
 

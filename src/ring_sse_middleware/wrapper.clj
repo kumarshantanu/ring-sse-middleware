@@ -53,11 +53,15 @@
   See: http://www.w3.org/TR/eventsource/"
   ^String [^String x]
   ;; check whether already in SSE format
-  (if (and (.startsWith x "data:")
-        (or (.endsWith x \return)
-          (.endsWith x \newline)))
+  (if (or (.startsWith x "data:")
+        (.startsWith x "event:"))
     ;; looks like already in SSE format, so return as it is
-    x
+    (if (or (.endsWith x \return)
+          (.endsWith x \newline))
+      x
+      (let [^StringBuilder sb (StringBuilder. x)]
+        (.append sb \newline)
+        (.toString sb)))
     (let [n (.length x)
           ^StringBuilder sb (StringBuilder. n)]
       ;; the `data: ` prefix
