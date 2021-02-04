@@ -20,12 +20,12 @@ _**No web server dependency is included. You must add a compatible web server to
 
 This middleware is tested with the following web servers:
 
-| Web server                                                                             | Version                     |
-|----------------------------------------------------------------------------------------|-----------------------------|
-| [Aleph/Manifold](http://aleph.io/)                                                     | 0.4.0 to 0.4.3              |
-| [HTTP Kit](http://www.http-kit.org/)                                                   | 2.1.x to 2.2.0              |
-| [Immutant](http://immutant.org/)                                                       | 2.1.9                       |
-| [Jetty](http://www.eclipse.org/jetty/) [adapter](https://github.com/ring-clojure/ring) | 9.2.x (Ring 1.4.0 to 1.6.2) |
+| Web server                                                                             | Version                                  |
+|----------------------------------------------------------------------------------------|------------------------------------------|
+| [Aleph/Manifold](http://aleph.io/)                                                     | 0.4.0 to 0.4.6                           |
+| [HTTP Kit](http://www.http-kit.org/)                                                   | 2.1.x to 2.5.1                           |
+| [Immutant](http://immutant.org/)                                                       | 2.1.9 to 2.1.10                          |
+| [Jetty](http://www.eclipse.org/jetty/) [adapter](https://github.com/ring-clojure/ring) | 9.2.x (Ring 1.4.0) to 9.4.x (Ring 1.9.0) |
 
 
 ### Namespaces

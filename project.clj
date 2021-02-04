@@ -16,15 +16,15 @@
              :c10 {:dependencies [[org.clojure/clojure "1.10.2"]]
                    :global-vars  {*unchecked-math* :warn-on-boxed}}
              ;; test profiles
-             :aleph    {:dependencies [[aleph "0.4.3"]]
+             :aleph    {:dependencies [[aleph "0.4.6"]]
                         :jvm-opts ["-Dmanifold.disable-jvm8-primitives=true"]
                         :main ring-sse-middleware.aleph-test}
-             :immutant {:dependencies [[org.immutant/immutant "2.1.9"]]
+             :immutant {:dependencies [[org.immutant/immutant "2.1.10"]]
                         :main ring-sse-middleware.immutant-test}
-             :jetty    {:dependencies [[ring/ring-core "1.4.0"]
-                                       [ring/ring-jetty-adapter "1.4.0"]]
+             :jetty    {:dependencies [[ring/ring-core "1.9.0"]
+                                       [ring/ring-jetty-adapter "1.9.0"]]
                         :main ring-sse-middleware.jetty-test}
-             :http-kit {:dependencies [[http-kit "2.2.0"]]
+             :http-kit {:dependencies [[http-kit "2.5.1"]]
                         :main ring-sse-middleware.http-kit-test}
              :perf {:dependencies [[citius "0.2.4"]]
                     :jvm-opts ^:replace ["-server" "-Xms2048m" "-Xmx2048m"]}}
