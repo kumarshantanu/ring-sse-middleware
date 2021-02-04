@@ -3,8 +3,8 @@
 ## 0.1.3 / 2021-February-??
 
 - Fix cast exception problem - merge pull request #1
-- [Deprecation] Drop support for Clojure 1.6
-  - Because Aleph 0.4.6 requires Clojure 1.7 or higher
+- [Deprecation] Drop support for Clojure 1.6 and 1.7
+  - Because Aleph 0.4.6 requires Clojure 1.8 or higher
 
 
 ## 0.1.2 / 2017-October-29
