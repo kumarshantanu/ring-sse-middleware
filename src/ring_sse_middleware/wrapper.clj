@@ -59,8 +59,8 @@
         (.startsWith x "id:")
         (.startsWith x "retry:"))
     ;; looks like already in SSE format, so return as it is
-    (if (or (.endsWith x \return)
-          (.endsWith x \newline))
+    (if (or (.endsWith x "\r")
+          (.endsWith x "\n"))
       x
       (let [^StringBuilder sb (StringBuilder. x)]
         (.append sb \newline)
