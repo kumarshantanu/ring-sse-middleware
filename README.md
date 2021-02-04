@@ -9,7 +9,7 @@ More details on [W3C](http://www.w3.org/TR/eventsource/) and [Wikipedia](https:/
 
 ## Usage
 
-Clojars coordinates `[ring-sse-middleware "0.1.2"]`
+Clojars coordinates `[ring-sse-middleware "0.1.3-SNAPSHOT"]`
 
 _**No web server dependency is included. You must add a compatible web server to your project.**_
 
@@ -104,7 +104,7 @@ curl -v "localhost:3000/?stream=true"
 
 ## License
 
-Copyright © 2017 Shantanu Kumar (kumar.shantanu@gmail.com, shantanu.kumar@concur.com)
+Copyright © 2017-2021 Shantanu Kumar
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.

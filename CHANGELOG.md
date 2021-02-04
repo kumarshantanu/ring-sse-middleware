@@ -1,5 +1,10 @@
 # ring-sse-middleware Change Log
 
+## 0.1.3 / 2021-February-??
+
+- [Todo] Fix cast exception problem - merge pull request #1
+
+
 ## 0.1.2 / 2017-October-29
 
 - Fixes to `ring-sse-middleware.wrapper/as-sse-event`
