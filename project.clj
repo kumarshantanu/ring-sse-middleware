@@ -1,6 +1,6 @@
-(defproject ring-sse-middleware "0.1.3-SNAPSHOT"
+(defproject ring-sse-middleware "0.1.3"
   :description "Ring middleware to emit Server-sent Events"
-  :url "http://example.com/FIXME"
+  :url "https://github.com/kumarshantanu/ring-sse-middleware"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies []

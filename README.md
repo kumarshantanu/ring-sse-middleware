@@ -9,7 +9,7 @@ More details on [W3C](http://www.w3.org/TR/eventsource/) and [Wikipedia](https:/
 
 ## Usage
 
-Clojars coordinates `[ring-sse-middleware "0.1.3-SNAPSHOT"]`
+Clojars coordinates `[ring-sse-middleware "0.1.3"]`
 
 _Requires Clojure 1.8 or higher._
 

@@ -1,6 +1,6 @@
 # ring-sse-middleware Change Log
 
-## 0.1.3 / 2021-February-??
+## 0.1.3 / 2021-February-04
 
 - Fix cast exception problem - merge pull request #1
 - [Deprecation] Drop support for Clojure 1.6 and 1.7
