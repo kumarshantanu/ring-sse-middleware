@@ -11,6 +11,8 @@ More details on [W3C](http://www.w3.org/TR/eventsource/) and [Wikipedia](https:/
 
 Clojars coordinates `[ring-sse-middleware "0.1.3-SNAPSHOT"]`
 
+_Requires Clojure 1.7 or higher._
+
 _**No web server dependency is included. You must add a compatible web server to your project.**_
 
 
