@@ -8,6 +8,7 @@
                 *warn-on-reflection* true}
   :profiles {:dev {:dependencies [[org.clojure/tools.nrepl "0.2.12"]
                                   [cheshire "5.8.0"]]}
+             :provided {:dependencies [[org.clojure/clojure "1.6.0"]]}
              :c06 {:dependencies [[org.clojure/clojure "1.6.0"]]}
              :c07 {:dependencies [[org.clojure/clojure "1.7.0"]]
                    :global-vars  {*unchecked-math* :warn-on-boxed}}
@@ -30,7 +31,7 @@
                         :main ring-sse-middleware.http-kit-test}
              :perf {:dependencies [[citius "0.2.4"]]
                     :jvm-opts ^:replace ["-server" "-Xms2048m" "-Xmx2048m"]}}
-  :aliases {"aleph"    ["with-profile" "aleph,dev,c16"]
-            "http-kit" ["with-profile" "http-kit,dev,c16"]
-            "immutant" ["with-profile" "immutant,dev,c16"]
-            "jetty"    ["with-profile" "jetty,dev,c16"]})
+  :aliases {"aleph"    ["with-profile" "aleph,dev,c06"]
+            "http-kit" ["with-profile" "http-kit,dev,c06"]
+            "immutant" ["with-profile" "immutant,dev,c06"]
+            "jetty"    ["with-profile" "jetty,dev,c06"]})
